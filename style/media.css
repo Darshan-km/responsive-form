@@ -1,0 +1,107 @@
+@import "./style";
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1364px;
+  }
+}
+@media (max-width: 1023px) {
+  /* Typography */
+  h1 {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  label {
+    font-size: 14px;
+    margin: 0px 0px 4px 0px;
+  }
+
+  .form-control,
+  select {
+    border: 1px solid var(--border-primary-color);
+    border-radius: 33px;
+    margin-bottom: 26px;
+  }
+  /* Header section */
+  nav {
+    background-color: var(--header-bg-color);
+    background-image: url(../assets/img/header-bg.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50px auto;
+  }
+  nav .container {
+    min-height: 50px;
+  }
+  nav .img-responsive {
+    height: 32px;
+    width: 105px;
+  }
+  /* Steps Section */
+  .steps-wrapper {
+    flex-direction: row;
+  }
+  .steps-wrapper p {
+    display: none;
+  }
+  .steps-wrapper div {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+  .steps-wrapper span {
+    width: 30px;
+    height: 4px;
+    margin: 0px 5px;
+  }
+
+  /* Card Section */
+  .card {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .card .card-img-wrapper {
+    min-height: 80px;
+    height: 80px;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 1.25rem;
+  }
+  .card .card-img-wrapper img {
+    width: 50px;
+    height: 50px;
+    margin-right: 14px;
+  }
+  .card .card-img-wrapper p {
+    font-size: 18px;
+  }
+  .card .card-body .card-text {
+    font-size: 14px;
+  }
+  .card .card-body .card-title {
+    color: var(--heading-color);
+    font-size: 16px;
+  }
+  .card .custom-control-label {
+    font-size: 14px;
+  }
+
+  /* Form Section */
+  .form-wrapper .btn-form-submit {
+    margin-top: 32px;
+  }
+  .form-wrapper .btn-form-submit .btn {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 492px) and (max-width: 768px) {
+  .card .custom-control-label::before {
+    top: calc(100% - 1.5rem);
+  }
+  .card .custom-control-label::after {
+    top: calc(100% - 1.5rem);
+  }
+}

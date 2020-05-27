@@ -1,0 +1,48 @@
+@import "./fonts.css";
+@import "./layout.css";
+@import "./media.css";
+
+:root {
+  --primary-site-color: #13866d;
+  --primary-text-color: #333333;
+  --secondary-text-color: #616161;
+  --border-primary-color: #c6c6c6;
+  --border-secondary-color: #d0d0d0;
+  --check-box-color: #25ae88;
+  --icon-color: #179a7d;
+  --round-corner-color: #ebebeb;
+  --button-enable-color: #f98231;
+  --button-default-color: #e1e1e1;
+  --header-bg-color: #042e40;
+  --white-color: #fff;
+  --heading-color: #175053;
+  --box-shadow-color: #00000029;
+}
+body {
+  font-family: "Roboto-Regular";
+  color: var(--primary-text-color);
+}
+
+/* typography */
+h1 {
+  font-family: "Roboto-Light";
+  font-size: 34px;
+  text-align: center;
+  color: var(--heading-color);
+  letter-spacing: 0px;
+}
+
+label {
+  font-size: 16px;
+  color: var(--primary-text-color);
+  font-family: "Roboto-Regular";
+  padding: 0;
+  margin: 0px 0px 7px 0px;
+}
+
+.form-control,
+select {
+  border: 1px solid var(--border-primary-color);
+  border-radius: 33px;
+  margin-bottom: 27px;
+}

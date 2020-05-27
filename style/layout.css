@@ -1,0 +1,228 @@
+@import "./style";
+
+/* Header section */
+
+nav {
+  background-color: var(--header-bg-color);
+  background-image: url(../assets/img/header-bg.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+nav .container {
+  min-height: 101px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .img-responsive {
+  height: 55px;
+  width: 188px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+nav img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav .icon {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  padding: 6px 12px;
+  font-family: "Roboto-Light";
+  display: flex;
+}
+
+/* Main section */
+
+/* Steps Section */
+.steps-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.steps-wrapper p {
+  display: block;
+  color: var(--header-bg-color);
+  font-size: 18px;
+  font-family: "Roboto-Medium";
+}
+.steps-wrapper div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--round-corner-color);
+  font-size: 18px;
+  font-family: "Roboto-Medium";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-text-color);
+}
+.steps-wrapper div.current,
+.steps-wrapper span.current {
+  background-color: var(--button-enable-color);
+  color: var(--white-color);
+}
+.steps-wrapper div.previous,
+.steps-wrapper span.previous {
+  background-color: var(--icon-color);
+  color: var(--white-color);
+}
+.steps-wrapper span {
+  width: 4px;
+  height: 32px;
+  background-color: var(--round-corner-color);
+  margin: 6px 0px;
+  border-radius: 10px;
+}
+/* card section */
+.card {
+  max-width: 320px;
+  max-height: 519px;
+  box-shadow: 0px 0px 9px var(--box-shadow-color);
+  border-radius: 0;
+}
+.card .card-img-wrapper {
+  min-height: 197px;
+  height: 200px;
+  max-width: 100%;
+  background-color: var(--primary-site-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+.card .card-img-wrapper img {
+  width: 100px;
+  height: 100px;
+  margin-right: 0;
+}
+.card .card-img-wrapper p {
+  color: var(--white-color);
+  font-size: 22px;
+  font-family: "Roboto-Medium";
+}
+
+.card .card-body .card-text {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  font-family: "Roboto-Regular";
+}
+
+.card .card-body .card-title {
+  color: var(--heading-color);
+  font-size: 20px;
+}
+
+/* Check box custom */
+
+.card .custom-control-input {
+  left: 0;
+  width: 2rem;
+  height: 2.25rem;
+}
+.card .custom-control-label {
+  padding-left: 1rem;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1;
+}
+.card .custom-control-label::after {
+  top: calc(100% - 2.2rem);
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+}
+.card .custom-control-label::before {
+  top: calc(100% - 2.2rem);
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+}
+.card .custom-checkbox .custom-control-label::before {
+  border-radius: 50%;
+}
+.card .custom-control-label::before,
+.custom-file-label,
+.custom-select {
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.card
+  .custom-checkbox
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  background-color: var(--check-box-color);
+}
+.card .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  background-color: var(--check-box-color);
+}
+
+/* Form style */
+.form-wrapper {
+  box-shadow: 0px 0px 9px var(--box-shadow-color);
+  border-radius: 0;
+}
+
+.form-wrapper .btn-wrapper {
+  width: 152px;
+  height: 44px;
+  display: flex;
+  background-color: var(--button-default-color);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 33px;
+}
+.form-wrapper .btn-wrapper .btn {
+  width: 82px;
+  height: 38px;
+  border-radius: 33px;
+  box-sizing: border-box;
+  margin: 0 3px;
+  font-size: 18px;
+  background-color: var(--button-default-color);
+}
+.form-wrapper .btn-wrapper .btn.btn-active {
+  background-color: var(--button-enable-color);
+  color: var(--white-color);
+}
+
+.form-wrapper .btn-form-submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-wrapper .btn-form-submit .btn {
+  width: 162px;
+  height: 50px;
+  border-radius: 33px;
+  background-color: var(--button-default-color);
+  font-size: 20px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper .btn-form-submit .btn.active {
+  background-color: var(--button-enable-color);
+  color: var(--white-color);
+}
+
+.form-wrapper .custom-select {
+  background: #fff url("../assets/img/chevron-down-circle-outline.svg")
+    no-repeat right 0.2rem center/32px 32px;
+}
