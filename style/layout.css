@@ -1,5 +1,4 @@
 @import "./style";
-
 /* Header section */
 
 nav {
@@ -174,6 +173,7 @@ nav .icon {
 .form-wrapper {
   box-shadow: 0px 0px 9px var(--box-shadow-color);
   border-radius: 0;
+  background-color: var(--white-color);
 }
 
 .form-wrapper .btn-wrapper {

@@ -21,6 +21,10 @@
 body {
   font-family: "Roboto-Regular";
   color: var(--primary-text-color);
+  background-image: url(../assets/img/body-bg.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* typography */
